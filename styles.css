@@ -1,90 +1,68 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0e1d34 0%, #fff 50%, darkgreen 100%);
-}
-
-.app-container {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    color: white;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: darkgreen;
-    text-shadow: 1px 2px #fff;
+header {
+    background: #333;
+    padding: 1em;
 }
 
-h1 span {
-    color: #fff;
-    text-shadow: 1px 2px #0e1d34;
+header h1 {
+    margin: 0;
 }
 
-#upload-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+main {
+    flex: 1;
+    padding: 2em;
 }
 
-#upload-section input {
-    border: 0!important;
+.manager-section {
+    margin-bottom: 2em;
 }
 
-#file-input {
-    margin-bottom: 1rem;
+input[type="file"] {
+    margin-bottom: 1em;
 }
 
 button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.5em 1em;
+    background: #ff9800;
     border: none;
-    border-radius: 5px!important;
-    background-color: #ff8c00;
-    box-shadow: 1px 2px 1px teal;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background: #e68900;
 }
 
-#pdf-list {
-    width: 100%;
-    max-width: 500px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#pdf-list a {
-    display: block;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    background: white;
+li {
+    background: #444;
+    margin: 0.5em 0;
+    padding: 1em;
     border-radius: 5px;
+}
+
+li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #555;
-}
+    background: #333;
+    padding: 1em;
+    }
