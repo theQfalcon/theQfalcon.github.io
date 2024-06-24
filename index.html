@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BerylPharmaco'23</title>
+    <title>BerylPharmaco23</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-container">
-        <h1>Beryl<span>Pharmaco'23</span></h1>
-        <div id="upload-section">
-            <input type="file" id="file-input" accept="application/pdf" />
-            <button id="upload-btn">Upload PDF</button>
-        </div>
-        <div id="pdf-list">
-            <!-- List of PDFs will be populated here -->
-        </div>
-        <footer>©2024 BerylPharmaco</footer>
-    </div>
-    <script src="script.js"></script>
-</body>
+    <header>
+        <h1>BerylPharmaco23 Lecture Notes</h1>
+    </header>
+    <main>
+        <section id="upload-section" class="manager-section">
+            <h2>Upload Lecture Notes</h2>
+            <input type="file" id="fileInput" accept=".pdf">
+            <button id="uploadBtn">Upload</button>
+        </section>
+        <section id="notes-section">
+            <h2>Available Lecture Notes</h2>
+            <ul id="notesList">
+                <!-- Lecture notes will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 BerylPharmaco23</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body> 
 </html>
