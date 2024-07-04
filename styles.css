@@ -1,68 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset and styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0);
+    padding: 20px;
+}
+
+#app-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15% 0;
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #6b73ff, #000dff);
-    color: white;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-header {
-    background: #333;
-    padding: 1em;
+#lecture-notes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-header h1 {
-    margin: 0;
+.lecture-note {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    flex: 1;
-    padding: 2em;
-}
-
-.manager-section {
-    margin-bottom: 2em;
-}
-
-input[type="file"] {
-    margin-bottom: 1em;
-}
-
-button {
-    padding: 0.5em 1em;
-    background: #ff9800;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #e68900;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: #444;
-    margin: 0.5em 0;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-li a {
-    color: white;
+.lecture-note a {
+    color: #007bff;
     text-decoration: none;
 }
 
+.lecture-note a:hover {
+    text-decoration: underline;
+}
+
 footer {
-    background: #333;
-    padding: 1em;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .lecture-note {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lecture-note a {
+        margin-top: 10px;
+    }
     }
