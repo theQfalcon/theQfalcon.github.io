@@ -30,6 +30,8 @@ header {
 }
 
 h1 {
+    font-family: SpaceGrotesk-Light;
+    line-height: 1.2;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
