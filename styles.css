@@ -53,6 +53,10 @@ h1 {
     align-items: center;
 }
 
+.lecture-note span {
+    color: #0e1d34;
+}
+
 .lecture-note a {
     color: #0e1d34;
     background: #ff8c00;
