@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(135deg, #f0f0f0, #c0c0c0);
     padding: 20px;
 }
@@ -23,6 +23,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header {
+    padding: 10% 0;
 }
 
 h1 {
@@ -50,12 +54,16 @@ h1 {
 }
 
 .lecture-note a {
-    color: #007bff;
+    color: #0e1d34;
+    background: #ff8c00;
+    padding: 10px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.lecture-note a:hover {
-    text-decoration: underline;
+.lecture-note a: hover {
+    background: #0e1d34;
+    color: #ff8c00;
 }
 
 footer {
