@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f0f0f0, #c0c0c0);
     padding: 20px;
 }
@@ -18,25 +18,22 @@ body {
     margin: 15% 0;
     width: 100%;
     max-width: 600px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    padding: 5% 0;
+    padding: 10% 0;
 }
 
 h1 {
-    font-family: SpaceGrotesk-Light!important;
-    line-height: 1.2;
-    letter-spacing: 0.5px;
     font-size: 2rem;
-    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #333;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -51,6 +48,7 @@ h1 {
 .lecture-note {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
+    border: 1px solid hotpink;
     padding: 15px;
     display: flex;
     flex-direction: row!important;
@@ -64,13 +62,14 @@ h1 {
 
 .lecture-note a {
     color: #0e1d34;
-    background: #ff8c00;
-    padding: 10px;
     text-decoration: none;
+    background: #ff8c00;
+    border: none;
+    padding: 10px;
     transition: 0.3s;
 }
 
-.lecture-note a: hover {
+.lecture-note a:hover {
     background: #0e1d34;
     color: #ff8c00;
 }
@@ -96,4 +95,4 @@ footer {
     .lecture-note a {
         margin-top: 10px;
     }
-    }
+}
